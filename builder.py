@@ -9,6 +9,10 @@ def pull(browser_name, vers):
     os.system(f'docker pull selenoid/{browser_name}:{vers}')
 
 
+def push(browser_name, vers):
+    os.system(f'docker push kannigrand/{browser_name}:{vers}')
+
+
 def get_sh(browser_name, vers):
     os.system(f'docker run -d --rm --name test selenoid/{browser_name}:{vers}')
     sleep(1)
@@ -32,19 +36,26 @@ if __name__ == '__main__':
     versions_op = ["72.0", "73.0", "74.0", "75.0", "76.0", "77.0"]
 
     for x in versions_ff:
-        pull("firefox", x)
-
+        # get_sh("firefox", x)
+        # build("firefox", x)
+        # pull("firefox", x)
+        push("firefox", x)
+        pass
+    print("firefox done")
     for x in versions_ch:
-        pull("chrome", x)
-
+        # get_sh("chrome", x)
+        # build("chrome", x)
+        # pull("chrome", x)
+        push("chrome", x)
+        pass
+    print("chrome done")
     for x in versions_op:
-        pull("vnc_opera", x)
+        pull("opera", x)
+        get_sh("opera", x)
+        # build("opera", x)
 
-    # for x in versions_ff:
-    #     get_sh("firefox", x)
+        # push("opera", x)
+        pass
+    print("opera done")
 
-    # for x in versions_ch:
-    #     build("chrome", x)
-    #
-    # for x in versions_ff:
-    #     build("firefox", x)
+
