@@ -1,0 +1,29 @@
+version: '3'
+services:
+  selenoid:
+    container_name: selenoid
+    network_mode: bridge
+    image: aerokube/selenoid
+    volumes:
+      - "/c/Projects/selenoid-docker/selenoid/config/:/etc/selenoid/"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "/c/Projects/selenoid-docker/selenoid/video:/opt/selenoid/video"
+      - "/c/Projects/selenoid-docker/selenoid/logs:/opt/selenoid/logs"
+    environment:
+      - OVERRIDE_VIDEO_OUTPUT_DIR=/c/Projects/selenoid-docker/selenoid/video
+    command: [ "-conf", "/etc/selenoid/browsers.json",
+               "-video-output-dir", "/opt/selenoid/video",
+               "-log-output-dir", "/opt/selenoid/logs" ]
+    ports:
+      - "4444:4444"
+
+  selenoid-ui:
+    container_name: selenoid-ui
+    image: aerokube/selenoid-ui
+    network_mode: bridge
+    links:
+      - selenoid
+    ports:
+      - "8080:8080"
+    command: [ "--selenoid-uri", "http://127.0.0.1:4444" ]
+#./cm.exe selenoid start --vnc --browsers-json /c/Projects/selenoid-docker/selenoid/config/browsers.json --args "-limit 10"
