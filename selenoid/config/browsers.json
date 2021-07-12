@@ -1,0 +1,157 @@
+{
+  "chrome": {
+    "default": "91.0",
+    "versions": {
+      "80.0": {
+        "image": "kannigrand/chrome:80.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "81.0": {
+        "image": "kannigrand/chrome:81.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "83.0": {
+        "image": "kannigrand/chrome:83.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "84.0": {
+        "image": "kannigrand/chrome:84.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "85.0": {
+        "image": "kannigrand/chrome:85.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "86.0": {
+        "image": "kannigrand/chrome:86.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "87.0": {
+        "image": "kannigrand/chrome:87.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "88.0": {
+        "image": "kannigrand/chrome:88.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "89.0": {
+        "image": "kannigrand/chrome:89.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "90.0": {
+        "image": "kannigrand/chrome:90.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "91.0": {
+        "image": "kannigrand/chrome:91.0",
+        "port": "4444",
+        "path": "/"
+      }
+    }
+  },
+  "firefox": {
+    "default": "89.0",
+    "versions": {
+      "79.0": {
+        "image": "kannigrand/firefox:79.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      },
+      "80.0": {
+        "image": "kannigrand/firefox:80.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      },
+      "81.0": {
+        "image": "kannigrand/firefox:81.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      },
+      "82.0": {
+        "image": "kannigrand/firefox:82.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      },
+      "83.0": {
+        "image": "kannigrand/firefox:83.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      },
+      "84.0": {
+        "image": "kannigrand/firefox:84.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      },
+      "85.0": {
+        "image": "kannigrand/firefox:85.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      },
+      "86.0": {
+        "image": "kannigrand/firefox:86.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      },
+      "87.0": {
+        "image": "kannigrand/firefox:87.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      },
+      "88.0": {
+        "image": "kannigrand/firefox:88.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      },
+      "89.0": {
+        "image": "kannigrand/firefox:89.0",
+        "port": "4444",
+        "path": "/wd/hub"
+      }
+    }
+  },
+  "opera": {
+    "default": "77.0",
+    "versions": {
+      "72.0": {
+        "image": "selenoid/vnc_opera:72.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "73.0": {
+        "image": "selenoid/vnc_opera:73.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "74.0": {
+        "image": "selenoid/vnc_opera:74.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "75.0": {
+        "image": "selenoid/vnc_opera:75.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "76.0": {
+        "image": "selenoid/vnc_opera:76.0",
+        "port": "4444",
+        "path": "/"
+      },
+      "77.0": {
+        "image": "selenoid/vnc_opera:77.0",
+        "port": "4444",
+        "path": "/"
+      }
+    }
+  }
+}
